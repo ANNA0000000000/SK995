@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>ลิงค์แชร์กิจกรรม</title>
+</head>
+<body>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+    <script>
+        async function main() {
+                                         // Liff ID
+            await liff.init({ liffId: "1657684419-X00Njymp" })
+            await liff.shareTargetPicker([
+                {
+                    type: "flex",
+                    // ข้อความก่อนกดอ่าน
+                    altText: "แจกเครดิตฟรี 50.-",
+                    contents: 
+                    // โค้ดจาก line bot designer
+                    {
+  "type": "bubble",
+  "hero": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "image",
+        "url": "https://cdn.discordapp.com/attachments/1045621382580539462/1045638932064391288/50.png",
+        "size": "full"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://cdn.discordapp.com/attachments/1045621382580539462/1045640600273293342/2.png",
+            "size": "full",
+            "aspectRatio": "10.40:5.2"
+          }
+        ],
+        "margin": "xs"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://cdn.discordapp.com/attachments/1045621382580539462/1045639286126559272/d4b9563e6b2ca2e0.png",
+                "size": "full",
+                "aspectRatio": "3:1"
+              }
+            ],
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "https://lin.ee/HMNETpL"
+            }
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://cdn.discordapp.com/attachments/1045621382580539462/1045639307668500561/47f9e64eba5e064c.png",
+                "size": "full",
+                "aspectRatio": "3:1"
+              }
+            ],
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "http://www.superjoker99.com/"
+            }
+          }
+        ],
+        "spacing": "xs"
+      }
+    ],
+    "background": {
+      "type": "linearGradient",
+      "angle": "0deg",
+      "startColor": "#ff99cc",
+      "endColor": "#ff99cc",
+      "centerColor": "#ff3366"
+    },
+    "paddingAll": "xs"
+  }
+}
+                }
+            ])
+            liff.closeWindow()
+        }
+        main()
+    </script>
+</body>
+</html>
